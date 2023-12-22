@@ -1,0 +1,20 @@
+{
+  "name": "gzip-size-import-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf ./dist",
+    "build": "NODE_OPTIONS=--unhandled-rejections=strict tsup ./index.mts --format esm",
+    "start": "node dist/index.js"
+  },
+  "type": "module",
+  "author": "Alex Malitsky",
+  "license": "ISC",
+  "devDependencies": {
+    "gzip-size": "^7.0.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
